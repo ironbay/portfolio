@@ -1,0 +1,36 @@
+app.directive("segment", function() {
+    return function(scope, element, attr) {
+        var root = element[0];
+        console.log(root);
+        var siblings = Array.prototype.slice.call(element.parent().children());
+        var index =siblings.indexOf(root);
+        //root.style.top = root.clientHeight * index + "px";
+    }
+})
+
+app.directive("scroller", ["$timeout", function($timeout) {
+    return function(scope, element, attr) {
+        $timeout(function() {
+            element.addClass("ready");
+            var scrolling = false;
+            element.parent().on("scroll", function(e) {
+                element.parent()[0].scrollTop = 0;
+                if(scrolling)
+                    return;
+                scrolling = true;
+                current -= height;
+
+                $timeout(function() {
+                    scrolling = false;
+                }, 1000)
+                console.log(e);
+                element.css("transform", "translate3d(0," + current + "px,0)")
+                console.log(current);
+            });
+        },1000)
+
+        var height = element[0].clientHeight;
+        var current = -100;
+
+    }
+}]);
