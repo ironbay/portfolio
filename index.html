@@ -5,11 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>IRONBAY</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/vendor/reset.css">
 
     <link rel="stylesheet" href="css/app/base.css">
     <link rel="stylesheet" href="css/app/layout.css">
+
+    <link rel="stylesheet" href="css/app/section/logo.css">
+    <link rel="stylesheet" href="css/app/section/intro.css">
+    <link rel="stylesheet" href="css/app/section/skills.css">
 
 </head>
 
@@ -19,20 +25,25 @@
 
     <div class="root">
         <div scroller class="scroller">
-            <section segment class="logo">
-                <div class="center">
-                    <div class="bounce">IRONBAY</div>
-                </div>
-            </section>
-            <section segment></section>
+            <div logo-section></div>
+            <div intro-section></div>
+            <div skills-section></div>
         </div>
     </div>
 
     <script type="text/javascript" src="js/vendor/angular.min.js"></script>
     <script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
 
+
     <script type="text/javascript" src="js/app/module.js"></script>
-    <script type="text/javascript" src="js/app/directives.js"></script>
+
+    <script type="text/javascript" src="js/app/services/wheel.js"></script>
+
+    <script type="text/javascript" src="js/app/components/scroller.js"></script>
+
+    <script type="text/javascript" src="js/app/components/section/logo.js"></script>
+    <script type="text/javascript" src="js/app/components/section/intro.js"></script>
+    <script type="text/javascript" src="js/app/components/section/skills.js"></script>
 
 </body>
 

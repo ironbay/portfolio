@@ -1,0 +1,17 @@
+.logo-section {
+    background: #F5F5F5;
+}
+
+.logo-section .logo {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 4em;
+    letter-spacing: 0.15em;
+    transition: transform .5s cubic-bezier(.165,.84,.44,1);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.logo-section.active .logo {
+    transform: translate3d(0px, 100px, 0px);
+}
+    
