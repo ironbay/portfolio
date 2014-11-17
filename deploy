@@ -1,1 +1,1 @@
-rsync -rltzuv -e 'ssh -o StrictHostKeyChecking=no' --checksum --ignore-times . dharun@jarvis.systems:/opt/ironbay/portfolio/
+rsync -rltzuv -e 'ssh -o StrictHostKeyChecking=no' --checksum --ignore-times . jarvis.systems:/opt/ironbay/portfolio/
