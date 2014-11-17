@@ -32,7 +32,6 @@
 
 .intro-section.active .bubble .line {
     transform: translate3d(0, 100%, 0);
-    -webkit-transition-delay: 1.3s;
 }
 
 .intro-section .bubble .wrap {
@@ -54,19 +53,19 @@
     left: 0px;
     right: 0px;
     opacity: 0;
-    transition: all 1.2s linear;
+    transition: all 200ms linear;
 }
 
 .intro-section.active .bubble .wrap img {opacity: 1;}
 
 .intro-section .bubble:nth-child(1) {-webkit-transition-delay: 0.3s;}
-.intro-section .bubble:nth-child(1) img {-webkit-transition-delay: 0.7s !important;}
+.intro-section .bubble:nth-child(1) * {-webkit-transition-delay: 1s !important;}
 
 .intro-section .bubble:nth-child(2) {-webkit-transition-delay: 0.4s;}
-.intro-section .bubble:nth-child(2) img {-webkit-transition-delay: 0.8s !important;}
+.intro-section .bubble:nth-child(2) * {-webkit-transition-delay: 1.3s !important;}
 
 .intro-section .bubble:nth-child(3) {-webkit-transition-delay: 0.5s;}
-.intro-section .bubble:nth-child(3) img {-webkit-transition-delay: 0.9s !important;}
+.intro-section .bubble:nth-child(3) * {-webkit-transition-delay: 1.6s !important;}
 
 .intro-section.active .bubble {
     transform: translate3d(0px, 0px, 0px);
