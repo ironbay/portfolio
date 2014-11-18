@@ -6,13 +6,7 @@ app.directive("introSection", ["wheel", "$timeout", function(wheel, $timeout) {
 
         },
         link: function(scope, element, attrs) {
-
-            wheel.step(function(i) {
-                if(i==1) {
-                    scope.active = true;    
-                }
-                scope.$apply();
-            })
+            
         }
     };
 }]);

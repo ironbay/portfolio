@@ -6,11 +6,6 @@ app.directive("logoSection", ["wheel", "$timeout", function(wheel, $timeout) {
 
         },
         link: function(scope, element, attrs) {
-
-            wheel.step(function(i) {
-                if(i==0)
-                    element.addClass("active");
-            })
         }
     };
 }]);

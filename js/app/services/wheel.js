@@ -1,4 +1,4 @@
-app.factory("wheel", ["$window", "$timeout", function($window, $timeout) {
+app.factory("wheel", ["$window", "$timeout", "$rootScope", function($window, $timeout, $rootScope) {
 
     var callbacks = [];
     var position = 0;
@@ -23,7 +23,8 @@ app.factory("wheel", ["$window", "$timeout", function($window, $timeout) {
         notify();
         $timeout(function() {
             disabled = false;
-        }, 1000)
+        }, 1000);
+        $rootScope.$apply();
     }, false);
 
     $timeout(function() {
