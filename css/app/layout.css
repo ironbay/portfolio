@@ -26,11 +26,12 @@
     height: 100%;
     transition: transform .5s cubic-bezier(.165,.84,.44,1);
     position: relative;
-    padding: 0px 60px;
+    padding: 0px 30px;
 }
 
 .scroller section .content {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -50,4 +51,12 @@ p {
     font-weight: lighter;
     line-height: 1.5em;
     margin: auto;
+    padding-bottom: 5%;
+    background: white;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 50%;
+    }
 }

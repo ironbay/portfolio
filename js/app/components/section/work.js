@@ -15,7 +15,31 @@ app.directive("workSection", ["wheel", "$timeout", function(wheel, $timeout) {
             scope.works = [
                 {
                     title : "Parrable Landing Page",
-                    image : "/img/work/landing-page"
+                    image : "http://milee.co/v1/img/works/thumbnail/platter.jpg"
+                },
+                {
+                    title : "Parrable Landing Page",
+                    image : "http://milee.co/v1/img/works/thumbnail/whatsyourobject.jpg"
+                },
+                {
+                    title : "Parrable Landing Page",
+                    image : "http://milee.co/v1/img/works/thumbnail/platter.jpg"
+                },
+                {
+                    title : "Parrable Landing Page",
+                    image : "http://milee.co/v1/img/works/thumbnail/platter.jpg"
+                },
+                {
+                    title : "Parrable Landing Page",
+                    image : "http://milee.co/v1/img/works/thumbnail/platter.jpg"
+                },
+                {
+                    title : "Parrable Landing Page",
+                    image : "http://milee.co/v1/img/works/thumbnail/platter.jpg"
+                },
+                {
+                    title : "Parrable Landing Page",
+                    image : "http://milee.co/v1/img/works/thumbnail/platter.jpg"
                 },
                 {
                     title : "Parrable Analytics",
