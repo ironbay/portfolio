@@ -1,0 +1,16 @@
+.work-section {
+}
+
+.work-section .wrap {
+    padding: 60px 0px;
+}
+
+.work-section .wrap .work {
+    width: 25%;
+    padding-bottom: 25%;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin: 25px;
+    border-radius: 100000px;
+}
