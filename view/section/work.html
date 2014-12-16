@@ -1,2 +1,7 @@
 <section class="work-section">
+    <div class="content center">
+        <div class="wrap">
+            <a target="_blank" ng-class="{border : work.border}" ng-repeat="work in works" style="background-image: url({{ work.image }})" class="work" ng-href="{{ work.link }}"></a>
+        </div>
+    </div>
 </section>

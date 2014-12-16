@@ -1,16 +1,40 @@
+.intro-section {
+    background: white;
+}
 
-.intro-section {background: white;}
+.intro-section .content {
+    position: relative;
+}
+
+.intro-section .lines {
+    bottom: 0px;
+    top: initial;
+    transition: all 0.7s linear;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    z-index: 0;
+}
+
+.intro-section.active .lines {
+    transform: scaleY(1);
+    -webkit-transition-delay: 1.2s;
+}
 
 .intro-section .bubbles {
-    margin: 45px auto;
     position: relative;
     z-index: 100;
+}
+
+.intro-section .white {
+    z-index: 100;
+    background: white;
+    position: relative;
 }
 
 .intro-section .bubble {
     width: 33%;
     float: left;
-    padding: 0px 25px;
+    padding: 0px 3%;
     transition: all 1s cubic-bezier(.165,.84,.44,1);
     opacity: 0;
     transform: translate3d(0px, 100px, 0px);
@@ -37,7 +61,7 @@
 
 .intro-section .bubble .wrap {
     padding-bottom: 100%;
-    border-radius: 100%;
+    border-radius: 10000px;
     border: 2px solid #BCBCBC;
     background: white;
     background-size: 100px;
@@ -45,8 +69,10 @@
     background-repeat: no-repeat;
 }
 
+.wrap {}
+
 .intro-section .bubble .wrap img {
-    width: 100px;
+    width: 30%;
     position: absolute;
     margin: auto;
     top: 0px;

@@ -3,21 +3,22 @@
 }
 
 
-.skills-section .lines {
+section .lines {
     position: absolute;
     width: 100%;
     top: 0px;
     height: 50%;
+    z-index: -100;
 }
 
-.skills-section .lines .wrap {
+section .lines .wrap {
     width: 33%;
     float: left;
     height: 100%;
     position: relative;
 }
 
-.skills-section .line {
+section .line {
     position: absolute;
     left: 50%;
     margin-left: -1px;

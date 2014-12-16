@@ -14,12 +14,25 @@ app.directive("workSection", ["wheel", "$timeout", function(wheel, $timeout) {
 
             scope.works = [
                 {
-                    title : "Parrable Landing Page",
-                    image : "/img/work/landing-page"
+                    title : "Fybr",
+                    image : "img/work/fybr.jpg",
+                    link : "/work/fybr"
                 },
                 {
-                    title : "Parrable Analytics",
-                    image : "/img/work/landing-page"
+                    title : "Parrable",
+                    image : "img/work/parrable.jpg",
+                    border : true,
+                    link : "https://www.parrable.com/"
+                },
+                {
+                    title : "Hawk",
+                    image : "img/work/hawk.jpg",
+                    link : "/work/hawk"
+                },
+                {
+                    title : "Art",
+                    image : "http://pia.ink/img/works/yeezus.jpg",
+                    link : "http://pia.ink"
                 },
             ];
         }

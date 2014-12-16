@@ -6,11 +6,7 @@ app.directive("skillsSection", ["wheel", "$timeout", function(wheel, $timeout) {
 
         },
         link: function(scope, element, attrs) {
-
-            wheel.step(function(i) {
-                if(i==2)
-                    scope.active = true;
-            })
+            
         }
     };
 }]);
